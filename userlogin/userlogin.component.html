@@ -1,0 +1,35 @@
+<form (ngSubmit)="onSubmit()" #myForm="ngForm">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" required minlength="3" [(ngModel)]="user.username">
+  <br>
+  <label for="Fathername">Fathername:</label>
+  <input type="text" id="Fathername" name="Fathername" required minlength="3" [(ngModel)]="user.Fathername">
+  <br>
+  <label for="Mothername">Mothername:</label>
+  <input type="text" id="Mothername" name="Mothername" required minlength="3" [(ngModel)]="user.Mothername">
+  <br>
+  <label for="Address">Address:</label>
+  <input type="text" id="Address" name="Address" required minlength="3"[(ngModel)]="user.Address">
+  
+  <label for="Pincode">Pincode:</label>
+  <select class="select" id="pincode" name="pincode" required [(ngModel)]="user.pincode">
+    <option value="1"></option>
+    <option value="2">500018</option>
+    <option value="3">501359</option>
+    <option value="4">500101</option>
+    <option value="5">515766</option>
+    <option value="6">400001</option>
+    <option value="7">600018</option>
+  </select>
+  <br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required [(ngModel)]="user.email">
+  <br>
+  <label for="Contact">Contact:</label>
+  <input type="Contact" id="Contact" name="Contact" required minlength="10"maxlength="10" [(ngModel)]="user.Contact">
+  <br>
+  <button type="submit" [disabled]="!myForm.form.valid"routerLink="/userview">Submit</button>
+</form>
+
+<a [routerLink]="['/userview']" [queryParams]="{ username: user.username,Fathername:user.Fathername,Mothername:user.Mothername ,Address:user.Address,Pinecode:user.pincode,Email: user.email, Contact: user.Contact }" [queryParamsHandling]="'merge'" *ngIf="myForm.form.valid">Go to userview</a>

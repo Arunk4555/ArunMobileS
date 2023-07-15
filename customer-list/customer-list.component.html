@@ -1,0 +1,23 @@
+<p>customer-list works!</p>
+<h2>customer-list</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>productname</th>
+            <th>username</th>
+            <th>contactnumber</th>
+            <th> UPItranscationId!</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let book of books">
+            <td>{{book.productname}}</td>
+            <td>{{book.username}}</td>
+            <td>{{book.contactnumber}}</td>
+            <td>{{book.upitranscationId}}</td>
+            
+           
+    </tr>
+
+    </tbody>
+</table>

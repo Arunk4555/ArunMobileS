@@ -1,0 +1,33 @@
+<p>userview works!</p>
+<button style="margin: 5px;"class="btn btn-info" data-toggle="modal" data-target="#loginModal"><a style="color:white;" href="javascript:void(0);" routerLink="/book">Book Now </a></button>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            
+            <th>product</th>
+            <th>Description</th>
+            <th>image</th>
+            <th>Stock</th>
+            
+           
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let mobile of mobiles ">
+            
+            <td>{{mobile.product}}</td>
+            <td>{{mobile.description}}</td>
+            <td>{{mobile.link}}</td>
+            <td>{{mobile.stock}}</td>
+            
+            
+           
+            
+            
+            
+            
+        </tr>
+        
+    </tbody>
+</table>

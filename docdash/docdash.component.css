@@ -1,0 +1,8 @@
+.footer {
+    height: 40px; /* Set the desired height for the footer */
+    background-color: #b53f3f; /* Customize the background color */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}

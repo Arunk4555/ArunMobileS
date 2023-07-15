@@ -1,0 +1,17 @@
+.admin-page {
+    background-image: url('src\assets\HD3.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin-right: auto;
+    overflow: hidden;
+    
+    
+  }
+  p {
+    font-size: 20px;
+    line-height: 2.0;
+    color: black;
+  }

@@ -1,0 +1,33 @@
+<p>add-mobile works!</p>
+<div class="col-md-6 offset-md-3">
+<h3>Add Mobile</h3>
+<form (ngSubmit)="onSubmit()">
+<div class="form-group">
+    <label>prodoct Name</label>
+    <input type="text" class="form-control" id="product"
+    [(ngModel)]="mobile.product" name="product">
+</div>
+
+<div class="form-group">
+    <label>description</label>
+    <input type="text" class="form-control" id="description"
+    [(ngModel)]="mobile.description" name="description">
+</div>
+
+
+<div class="form-group">
+    <label>stock</label>
+    <input type="text" class="form-control" id="stock"
+    [(ngModel)]="mobile.stock" name="stock">
+</div>
+<div class="form-group">
+    <label>image</label>
+    <input type="url" class="form-control" id="image"
+    [(ngModel)]="mobile.link" name="image">
+</div>
+
+<button class = "btn btn-success" type ="submit">Submit</button>
+    
+</form>
+</div>
+

@@ -1,0 +1,38 @@
+<p>mobile-list works!</p>
+<h2>product List</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            
+            <th>product</th>
+            <th>Description</th>
+            <th>Stock</th>
+            
+            <th>image</th>
+            <th>Actions</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let mobile of mobiles ">
+            
+            <td>{{mobile.product}}</td>
+            <td>{{mobile.description}}</td>
+            <td>{{mobile.stock}}</td>
+            <td>{{mobile.link}}</td>
+            
+
+            <td>
+                <button (click)="updateMobile(mobile.id)"class="btn btn-info">Update</button>
+                <br>
+                <br>
+                <button (click)="deleteMobile(mobile.id)" class="btn btn-danger  " style="margin-left: 10px">Delete</button>
+                <br>
+                <br>
+               
+            </td>
+            
+            
+        </tr>
+    </tbody>
+</table>

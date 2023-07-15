@@ -1,0 +1,34 @@
+<div class="col-md-6 offset-md-3">
+<h3>book your order</h3>
+<form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label>productname</label>
+        <input type="text" class="form-control" id="productname"
+        [(ngModel)]="book.productname" name="productname">
+    </div>
+
+    <div class="form-group">
+        <label>username</label>
+        <input type="text" class="form-control" id="username"
+        [(ngModel)]="book.username" name="username">
+    </div>
+
+
+    <div class="form-group">
+        <label>contactnumber</label>
+        <input type="text" class="form-control" id="contactnumber"
+        [(ngModel)]="book.contactnumber" name="contactnumber">
+    </div>
+
+
+    <div class="form-group">
+        <label> upitranscationId(pay 25% of price to 6303722412 gpay/phnpay to transcationId)</label>
+        <input type="text" class="form-control" id=" upitranscation_Id"
+        [(ngModel)]="book.upitranscationId" name=" upitranscation_Id ">
+    </div>
+
+    <button (click)=Submit() class="btn btn-success" type="submit" onclick="Submit()">Submit</button>
+
+
+</form>
+</div>

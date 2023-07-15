@@ -1,0 +1,28 @@
+<p>update-mobile works!</p>
+
+<div class="col-md-6 offset-md-3">
+<h3>update Mobile</h3>
+<form (ngSubmit)="onSubmit()">
+<div class="form-group">
+    <label>prodoct</label>
+    <input type="text" class="form-control" id="product"
+    [(ngModel)]="mobile.product" name="product">
+</div>
+
+<div class="form-group">
+    <label>description</label>
+    <input type="text" class="form-control" id="description"
+    [(ngModel)]="mobile.description" name="description">
+</div>
+
+<div class="form-group">
+    <label>stock</label>
+    <input type="text" class="form-control" id="stock"
+    [(ngModel)]="mobile.stock" name="stock">
+</div>
+
+<button class = "btn btn-success" type ="submit">Submit</button>
+    
+</form>
+</div>
+

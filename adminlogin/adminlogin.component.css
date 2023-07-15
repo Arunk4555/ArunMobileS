@@ -1,0 +1,11 @@
+.admin-page {
+  background-image: url('src\assets\HD2.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  margin-right: auto;
+  
+  
+}
